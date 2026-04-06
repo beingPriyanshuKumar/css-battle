@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
 :root {
   --purple: #6B21A8;
   --purple-mid: #7C3AED;
