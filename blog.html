@@ -468,53 +468,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    // Navbar scroll
-    const navbar = document.getElementById('navbar');
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-    }));
-    // Animate cards on scroll
-    const cards = document.querySelectorAll('.blog-card:not(.hidden-card)');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        }
-      });
-    }, { threshold: 0.08 });
-    cards.forEach(card => observer.observe(card));
-    // Load more blog posts
-    const loadMoreBtn = document.getElementById('load-more');
-    const hiddenCards = document.querySelectorAll('.hidden-card');
-    loadMoreBtn.addEventListener('click', () => {
-      hiddenCards.forEach((card, i) => {
-        card.classList.remove('hidden-card');
-        setTimeout(() => card.classList.add('visible'), i * 100 + 50);
-      });
-      loadMoreBtn.textContent = 'All Posts Loaded ✓';
-      loadMoreBtn.disabled = true;
-    });
-    // Destinations load more
-    document.getElementById('dest-load-more').addEventListener('click', function() {
-      this.textContent = 'Loading...';
-      setTimeout(() => { this.textContent = 'All Destinations Loaded ✓'; this.disabled = true; }, 1200);
-    });
-    // Newsletter
-    document.getElementById('newsletter-form').addEventListener('submit', e => {
-      e.preventDefault();
-      const btn = document.getElementById('newsletter-submit');
-      btn.textContent = 'Subscribed! ✓';
-      setTimeout(() => { btn.textContent = 'Subscribe'; e.target.reset(); }, 3000);
-    });
+
   </script>
 </body>
 </html>
