@@ -124,7 +124,7 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-date { font-size: 12px; color: var(--gray-text); }
 .blog-read { font-size: 12px; color: var(--gray-text); }
 
-.blog-card-body p { font-size: 13px; color: var(--gray-text); line-height: 1.7; margin-bottom: 18px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-card-body p { font-size: 13px; color: var(--gray-text); line-height: 1.7; margin-bottom: 18px; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 
 .view-post {
   display: inline-flex; align-items: center; gap: 6px;
