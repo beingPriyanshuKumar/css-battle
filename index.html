@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
   <nav id="navbar">
     <div class="nav-container">
       <a href="#" class="logo">TripBee</a>
@@ -24,7 +23,6 @@
       </button>
     </div>
   </nav>
-
   <section id="hero">
     <div class="hero-bg">
       <img src="assets/home/image.png" alt="Hero Background">
@@ -47,7 +45,6 @@
       </a>
     </div>
   </section>
-
   <section id="about" class="about-section">
     <div class="container">
       <div class="about-grid">
@@ -68,7 +65,6 @@
       </div>
     </div>
   </section>
-
   <section id="destinations" class="destinations-section">
     <div class="container">
       <div class="section-header">
@@ -100,7 +96,6 @@
       </div>
     </div>
   </section>
-
   <section class="why-section">
     <div class="container">
       <div class="why-grid">
@@ -131,7 +126,6 @@
       </div>
     </div>
   </section>
-
   <section class="popular-tours">
     <div class="container">
       <div class="section-header">
@@ -166,7 +160,6 @@
       </div>
     </div>
   </section>
-
   <section class="team-section">
     <div class="container">
       <div class="section-header">
@@ -176,7 +169,6 @@
       <img src="assets/home/Frame 1707480910.png" alt="Expert Travel Team" class="team-full-img">
     </div>
   </section>
-
   <section class="cta-section">
     <div class="cta-bg">
       <img src="assets/home/image 284.png" alt="CTA Background">
@@ -187,7 +179,6 @@
       <a href="#contact" class="btn-primary-white">Contact Now &rarr;</a>
     </div>
   </section>
-
   <section id="contact" class="faq-section">
     <div class="container">
       <div class="faq-grid">
@@ -251,7 +242,6 @@
       </div>
     </div>
   </section>
-
   <section class="newsletter-section">
     <div class="newsletter-bg">
       <img src="assets/home/image 260.png" alt="Newsletter Background">
@@ -268,7 +258,6 @@
       </form>
     </div>
   </section>
-
   <footer id="footer">
     <div class="container">
       <div class="footer-grid">
@@ -318,24 +307,19 @@
       </div>
     </div>
   </footer>
-
   <script>
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
-
     window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
-
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
-
     navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       hamburger.classList.remove('open');
       navLinks.classList.remove('open');
     }));
-
     document.getElementById('contact-form').addEventListener('submit', e => {
       e.preventDefault();
       const btn = document.getElementById('form-submit');
@@ -343,7 +327,6 @@
       btn.style.background = '#22c55e';
       setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; e.target.reset(); }, 3000);
     });
-
     document.getElementById('newsletter-form').addEventListener('submit', e => {
       e.preventDefault();
       const btn = document.getElementById('newsletter-submit');

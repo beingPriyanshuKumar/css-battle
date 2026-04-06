@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
 :root {
   --purple: #6B21A8;
   --purple-mid: #7C3AED;
@@ -15,15 +13,12 @@
   --radius: 16px;
   --ease: 0.3s ease;
 }
-
 html { scroll-behavior: smooth; }
 body { font-family: 'Inter', sans-serif; color: var(--text-dark); background: var(--white); overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; height: auto; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
-/* ===================== NAVBAR ===================== */
 #navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   padding: 20px 0;
@@ -49,8 +44,6 @@ img { display: block; max-width: 100%; height: auto; }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-/* ===================== HERO ===================== */
 #hero {
   position: relative; height: 70vh; min-height: 550px;
   display: flex; align-items: center; justify-content: center;
@@ -76,17 +69,12 @@ img { display: block; max-width: 100%; height: auto; }
   line-height: 1.1; margin-bottom: 20px; letter-spacing: -1.5px;
 }
 .hero-content p { font-size: clamp(14px, 1.8vw, 17px); color: rgba(255,255,255,.85); line-height: 1.7; }
-
 .hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .hero-scroll span { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.45); }
 .scroll-line { width: 1px; height: 44px; background: linear-gradient(to bottom, rgba(255,255,255,.5), transparent); animation: scrollPulse 1.8s ease-in-out infinite; }
 @keyframes scrollPulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
-
-/* ===================== BLOG SECTION ===================== */
 .blog-section { padding: 100px 0; background: var(--gray-light); }
-
 .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-
 .blog-card {
   background: var(--white); border-radius: 20px; overflow: hidden;
   box-shadow: 0 4px 24px rgba(107,33,168,.08);
@@ -97,21 +85,17 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-card:hover { box-shadow: 0 16px 48px rgba(107,33,168,.18); transform: translateY(-4px); }
 .blog-card.hidden-card { display: none; }
 .blog-card.hidden-card.visible { display: block; opacity: 1; transform: translateY(0); }
-
 .blog-card-img { position: relative; overflow: hidden; }
 .blog-card-img img { width: 100%; height: 220px; object-fit: cover; transition: transform 0.45s ease; }
 .blog-card:hover .blog-card-img img { transform: scale(1.06); }
-
 .blog-tags { position: absolute; top: 14px; left: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
 .tag {
   font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 50px;
   background: rgba(255,255,255,.88); color: var(--purple-dark);
   backdrop-filter: blur(6px); letter-spacing: 0.3px;
 }
-
 .blog-card-body { padding: 22px 24px 26px; }
 .blog-card-body h3 { font-size: 17px; font-weight: 800; margin-bottom: 12px; line-height: 1.35; color: var(--text-dark); }
-
 .blog-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
 .blog-author { display: flex; align-items: center; gap: 7px; }
 .author-avatar {
@@ -123,17 +107,13 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-author span { font-size: 13px; font-weight: 600; color: var(--text-dark); }
 .blog-date { font-size: 12px; color: var(--gray-text); }
 .blog-read { font-size: 12px; color: var(--gray-text); }
-
 .blog-card-body p { font-size: 13px; color: var(--gray-text); line-height: 1.7; margin-bottom: 18px; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-
 .view-post {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: 13px; font-weight: 700; color: var(--purple-mid);
   transition: gap var(--ease), color var(--ease);
 }
 .view-post:hover { color: var(--purple); gap: 10px; }
-
-/* Load More */
 .load-more-wrap { text-align: center; margin-top: 56px; }
 .btn-load-more {
   display: inline-flex; align-items: center; gap: 8px;
@@ -144,17 +124,12 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .btn-load-more:hover { background: var(--purple-mid); color: var(--white); transform: translateY(-2px); }
 .btn-load-more:disabled { opacity: 0.5; cursor: default; transform: none; }
-
-/* ===================== DESTINATIONS SECTION ===================== */
 .destinations-section { padding: 100px 0; background: var(--white); }
-
 .section-header { text-align: center; margin-bottom: 56px; }
 .eyebrow { display: block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--purple-mid); margin-bottom: 12px; }
 .section-header h2 { font-size: clamp(24px, 3.5vw, 38px); font-weight: 800; margin-bottom: 12px; max-width: 580px; margin-left: auto; margin-right: auto; }
 .section-header p { font-size: 15px; color: var(--gray-text); }
-
 .dest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-
 .dest-card { position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
 .dest-img { position: absolute; inset: 0; }
 .dest-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
@@ -179,8 +154,6 @@ img { display: block; max-width: 100%; height: auto; }
   transition: background var(--ease), transform var(--ease);
 }
 .dest-arrow:hover { background: rgba(255,255,255,.35); transform: scale(1.1); }
-
-/* ===================== NEWSLETTER ===================== */
 .newsletter-section { position: relative; padding: 100px 0; overflow: hidden; }
 .newsletter-bg { position: absolute; inset: 0; }
 .newsletter-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
@@ -193,8 +166,6 @@ img { display: block; max-width: 100%; height: auto; }
 .newsletter-form input { flex: 1; border: none; outline: none; padding: 12px 20px; font-size: 14px; font-family: inherit; background: transparent; color: var(--text-dark); }
 .newsletter-form button { background: linear-gradient(135deg, var(--purple), var(--purple-light)); color: var(--white); border: none; padding: 12px 28px; border-radius: 50px; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; transition: opacity var(--ease); white-space: nowrap; }
 .newsletter-form button:hover { opacity: .9; }
-
-/* ===================== FOOTER ===================== */
 #footer { background: var(--text-dark); padding: 80px 0 0; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 60px; }
 .footer-brand .logo { display: block; font-size: 22px; font-weight: 800; color: var(--white); margin-bottom: 16px; }
@@ -205,13 +176,10 @@ img { display: block; max-width: 100%; height: auto; }
 .footer-col ul a:hover { color: var(--purple-light); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 24px 0; text-align: center; }
 .footer-bottom p { font-size: 13px; color: rgba(255,255,255,.35); }
-
-/* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
   .footer-brand { grid-column: 1 / -1; }
 }
-
 @media (max-width: 900px) {
   .nav-links { gap: 20px; }
   .blog-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -220,7 +188,6 @@ img { display: block; max-width: 100%; height: auto; }
   .newsletter-form { width: 100%; max-width: 480px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
-
 @media (max-width: 768px) {
   .hamburger { display: flex; }
   .nav-container { flex-wrap: wrap; gap: 0; padding: 0 20px; }
@@ -238,7 +205,6 @@ img { display: block; max-width: 100%; height: auto; }
   .blog-section, .destinations-section, .newsletter-section { padding: 64px 0; }
   .blog-card-img img { height: 190px; }
 }
-
 @media (max-width: 540px) {
   .container { padding: 0 16px; }
   .blog-grid { grid-template-columns: 1fr; }

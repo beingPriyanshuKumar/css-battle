@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="destinations.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <nav id="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">TripBee</a>
@@ -25,8 +23,6 @@
       </button>
     </div>
   </nav>
-
-  <!-- HERO -->
   <section id="hero">
     <div class="hero-bg">
       <img src="assets/destination/image.png" alt="Explore Top Destinations">
@@ -42,8 +38,6 @@
       <div class="scroll-line"></div>
     </div>
   </section>
-
-  <!-- FILTER BAR -->
   <section class="filter-section">
     <div class="container">
       <div class="filter-bar">
@@ -56,8 +50,6 @@
       </div>
     </div>
   </section>
-
-  <!-- TOP DESTINATIONS GRID -->
   <section id="top-destinations" class="destinations-section">
     <div class="container">
       <div class="section-header">
@@ -65,10 +57,7 @@
         <h2>Discover The Most Dazzling Cities Across The Globe</h2>
         <p>TripBee Is Dedicated To Offer You The Ultimate Travel Experience.</p>
       </div>
-
       <div class="dest-grid" id="dest-grid">
-
-        <!-- France -->
         <div class="dest-card" data-category="europe">
           <div class="dest-card-img">
             <img src="assets/destination/Frame 1707480905.png" alt="Paris, France">
@@ -89,8 +78,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- Japan -->
         <div class="dest-card" data-category="asia">
           <div class="dest-card-img">
             <img src="assets/destination/Frame 1707480905 (1).png" alt="Kyoto, Japan">
@@ -111,8 +98,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- Australia -->
         <div class="dest-card" data-category="oceania">
           <div class="dest-card-img">
             <img src="assets/home/Frame 1707480905 (2).png" alt="Sydney, Australia">
@@ -133,8 +118,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- USA -->
         <div class="dest-card featured" data-category="americas">
           <div class="dest-card-img">
             <img src="assets/home/Frame 1707480905 (3).png" alt="New York, USA">
@@ -156,8 +139,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- Spain -->
         <div class="dest-card" data-category="europe">
           <div class="dest-card-img">
             <img src="assets/home/image 265.png" alt="Barcelona, Spain">
@@ -178,8 +159,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- Indonesia -->
         <div class="dest-card" data-category="asia">
           <div class="dest-card-img">
             <img src="assets/home/Frame 1707480905 (4).png" alt="Bali, Indonesia">
@@ -200,8 +179,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- France (2) -->
         <div class="dest-card" data-category="europe">
           <div class="dest-card-img">
             <img src="assets/home/image 273.png" alt="Lyon, France">
@@ -222,8 +199,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- Japan (2) -->
         <div class="dest-card" data-category="asia">
           <div class="dest-card-img">
             <img src="assets/home/image 274.png" alt="Tokyo, Japan">
@@ -244,8 +219,6 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
-        <!-- Australia (2) -->
         <div class="dest-card" data-category="oceania">
           <div class="dest-card-img">
             <img src="assets/destination/image 275.png" alt="Melbourne, Australia">
@@ -266,17 +239,12 @@
             <a href="#contact" class="dest-btn">Explore →</a>
           </div>
         </div>
-
       </div>
-
       <div class="load-more-wrap">
         <button class="btn-load-more" id="load-more">See All Destinations →</button>
       </div>
-
     </div>
   </section>
-
-  <!-- FEATURED BANNER -->
   <section class="featured-banner">
     <div class="featured-banner-bg">
       <img src="assets/Section 3.png" alt="Featured Destination">
@@ -296,8 +264,6 @@
       <a href="#contact" class="btn-primary-white">Plan My Trip →</a>
     </div>
   </section>
-
-  <!-- FAQ SECTION -->
   <section id="contact" class="faq-section">
     <div class="container">
       <div class="faq-grid">
@@ -331,22 +297,10 @@
           <div class="contact-form-card">
             <h3>Do You Have More Questions?</h3>
             <form id="contact-form">
-              <div class="form-group">
-                <label for="full-name">Name</label>
-                <input type="text" id="full-name" placeholder="Your full name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="your@email.com" required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="+1 (000) 000-0000">
-              </div>
-              <div class="form-group">
-                <label for="message">Tell us about your trip</label>
-                <textarea id="message" rows="4" placeholder="Which destination interests you?"></textarea>
-              </div>
+              <input type="text" id="full-name" placeholder="Name *" required>
+              <input type="email" id="email" placeholder="Email *" required>
+              <input type="tel" id="phone" placeholder="Phone Number *">
+              <textarea id="message" rows="3" placeholder="How can we help you?"></textarea>
               <button type="submit" class="btn-submit" id="form-submit">Request a Callback →</button>
             </form>
           </div>
@@ -354,8 +308,6 @@
       </div>
     </div>
   </section>
-
-  <!-- NEWSLETTER -->
   <section class="newsletter-section">
     <div class="newsletter-bg">
       <img src="assets/home/image 285.png" alt="Newsletter Background">
@@ -372,8 +324,6 @@
       </form>
     </div>
   </section>
-
-  <!-- FOOTER -->
   <footer id="footer">
     <div class="container">
       <div class="footer-grid">
@@ -432,29 +382,23 @@
       </div>
     </div>
   </footer>
-
   <script>
     // Navbar scroll behavior
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
-
     window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
-
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
-
     navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       hamburger.classList.remove('open');
       navLinks.classList.remove('open');
     }));
-
     // Filter logic
     const filterBtns = document.querySelectorAll('.filter-btn');
     const destCards = document.querySelectorAll('.dest-card');
-
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
@@ -471,7 +415,6 @@
         });
       });
     });
-
     // Animate cards on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -480,9 +423,7 @@
         }
       });
     }, { threshold: 0.1 });
-
     destCards.forEach(card => observer.observe(card));
-
     // Contact form
     document.getElementById('contact-form').addEventListener('submit', e => {
       e.preventDefault();
@@ -491,7 +432,6 @@
       btn.style.background = '#22c55e';
       setTimeout(() => { btn.textContent = 'Request a Callback →'; btn.style.background = ''; e.target.reset(); }, 3000);
     });
-
     // Newsletter form
     document.getElementById('newsletter-form').addEventListener('submit', e => {
       e.preventDefault();
@@ -499,7 +439,6 @@
       btn.textContent = 'Subscribed! ✓';
       setTimeout(() => { btn.textContent = 'Subscribe'; e.target.reset(); }, 3000);
     });
-
     // Load more button
     document.getElementById('load-more').addEventListener('click', function() {
       this.textContent = 'Loading...';
